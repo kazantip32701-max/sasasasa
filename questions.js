@@ -1,212 +1,120 @@
-module.exports = [
-  {
-    location: "Дёмское шоссе, Дёмский район",
-    question: "Можно ли выполнить обгон грузового автомобиля в данной ситуации?",
-    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800",
-    correct: false,
-    explanation: "Обгон запрещён на пешеходном переходе и при ограниченной видимости."
-  },
-  {
-    location: "ул. Колпинская, Дёмский район",
-    question: "Разрешён ли поворот налево на этом перекрёстке?",
-    image: "https://images.unsplash.com/photo-1544620341-11cb2cd7c5c5?w=800",
-    correct: true,
-    explanation: "При отсутствии запрещающих знаков и разметки поворот разрешён."
-  },
-  {
-    location: "Дёмский тракт",
-    question: "Можно ли остановиться на обочине в этом месте?",
-    image: "https://images.unsplash.com/photo-1469854525882-ee9d5c4b0d0e?w=800",
-    correct: false,
-    explanation: "Остановка запрещена ближе 5 метров от перекрёстка."
-  },
-  {
-    location: "село Нагаево",
-    question: "Разрешён ли обгон в населённом пункте на этой дороге?",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-    correct: false,
-    explanation: "В населённом пункте обгон часто ограничен знаком или разметкой."
-  },
-  {
-    location: "село Полгаково",
-    question: "Можно ли повернуть направо, не останавливаясь?",
-    image: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800",
-    correct: false,
-    explanation: "Знак «Уступите дорогу» обязывает уступить."
-  },
-  {
-    location: "село Сергеевка",
-    question: "Разрешено ли движение прямо?",
-    image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800",
-    correct: false,
-    explanation: "Знак «Въезд запрещён»."
-  },
-  {
-    location: "Дёмское шоссе",
-    question: "Можно ли начать обгон перед пешеходным переходом?",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800",
-    correct: false,
-    explanation: "Обгон на пешеходном переходе запрещён."
-  },
-  {
-    location: "Флотский переулок, Дёмский район",
-    question: "Разрешён ли разворот в этом месте?",
-    image: "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=800",
-    correct: true,
-    explanation: "При отсутствии запрещающих знаков разворот разрешён."
-  },
-  {
-    location: "мост через реку Дёма",
-    question: "Можно ли обгонять на мосту?",
-    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800",
-    correct: false,
-    explanation: "На мостах обгон запрещён."
-  },
-  {
-    location: "Дёмский район, въезд в город",
-    question: "Обязан ли водитель уступить дорогу пешеходу?",
-    image: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800",
-    correct: true,
-    explanation: "На пешеходном переходе водитель обязан уступить."
-  },
-  {
-    location: "ул. Авроры, Дёмский район",
-    question: "Можно ли выполнить обгон, если видимость менее 100 метров?",
-    image: "https://images.unsplash.com/photo-1469854525882-ee9d5c4b0d0e?w=800",
-    correct: false,
-    explanation: "Обгон запрещён при ограниченной видимости."
-  },
-  {
-    location: "село Нагаево, главная дорога",
-    question: "Имеет ли преимущество водитель на главной дороге?",
-    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800",
-    correct: true,
-    explanation: "Знак «Главная дорога» даёт преимущество."
-  },
-  {
-    location: "Дёмское шоссе, ремонт",
-    question: "Разрешено ли обгонять в зоне дорожных работ?",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-    correct: false,
-    explanation: "В зоне дорожных работ обгон часто запрещён."
-  },
-  {
-    location: "село Сергеевка, перекрёсток",
-    question: "Можно ли повернуть налево при жёлтом сигнале светофора?",
-    image: "https://images.unsplash.com/photo-1544620341-11cb2cd7c5c5?w=800",
-    correct: false,
-    explanation: "Жёлтый сигнал запрещает движение."
-  },
-  {
-    location: "Полгаково, населённый пункт",
-    question: "Разрешена ли остановка на проезжей части?",
-    image: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800",
-    correct: false,
-    explanation: "Знак «Остановка запрещена»."
-  },
-  {
-    location: "Дёмский район, выезд из двора",
-    question: "Обязан ли водитель, выезжающий из двора, уступить дорогу?",
-    image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800",
-    correct: true,
-    explanation: "При выезде из двора всегда уступаем дорогу."
-  },
-  {
-    location: "ул. Колпинская",
-    question: "Можно ли двигаться по полосе для маршрутных транспортных средств?",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800",
-    correct: false,
-    explanation: "Движение по выделенной полосе запрещено обычным автомобилям."
-  },
-  {
-    location: "Дёмское шоссе, крутой поворот",
-    question: "Разрешён ли обгон на крутом повороте?",
-    image: "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=800",
-    correct: false,
-    explanation: "На опасных поворотах обгон запрещён."
-  },
-  {
-    location: "село Нагаево, грунтовая дорога",
-    question: "Можно ли обгонять, если нет сплошной линии?",
-    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800",
-    correct: true,
-    explanation: "При отсутствии запрещающих знаков и разметки обгон разрешён, если безопасно."
-  },
-  {
-    location: "Сергеевка, знак 3.20",
-    question: "Действует ли запрет обгона до конца населённого пункта?",
-    image: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800",
-    correct: true,
-    explanation: "Знак 3.20 действует до конца населённого пункта."
-  },
-  {
-    location: "Дёмский район, перекрёсток равнозначных дорог",
-    question: "Кто имеет преимущество на перекрёстке равнозначных дорог?",
-    image: "https://images.unsplash.com/photo-1469854525882-ee9d5c4b0d0e?w=800",
-    correct: false,
-    explanation: "Преимущество у того, кто справа."
-  },
-  {
-    location: "мост через Дёму",
-    question: "Можно ли останавливаться на мосту?",
-    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800",
-    correct: false,
-    explanation: "Остановка на мостах запрещена."
-  },
-  {
-    location: "Дёмское шоссе, конец подъёма",
-    question: "Разрешён ли обгон в конце подъёма?",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-    correct: false,
-    explanation: "В конце подъёма обгон запрещён."
-  },
-  {
-    location: "село Полгаково, пешеходный переход",
-    question: "Можно ли обгонять на нерегулируемом пешеходном переходе?",
-    image: "https://images.unsplash.com/photo-1544620341-11cb2cd7c5c5?w=800",
-    correct: false,
-    explanation: "Обгон на пешеходных переходах запрещён."
-  },
-  {
-    location: "Дёмский район, жилая зона",
-    question: "Разрешена ли скорость более 20 км/ч в жилой зоне?",
-    image: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800",
-    correct: false,
-    explanation: "В жилой зоне максимальная скорость 20 км/ч."
-  },
-  {
-    location: "ул. Колпинская, сплошная линия",
-    question: "Можно ли пересекать сплошную линию разметки?",
-    image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800",
-    correct: false,
-    explanation: "Сплошную линию пересекать запрещено."
-  },
-  {
-    location: "село Сергеевка, знак «Стоп»",
-    question: "Обязан ли водитель полностью остановиться перед знаком «Стоп»?",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800",
-    correct: true,
-    explanation: "Знак 2.5 требует полной остановки."
-  },
-  {
-    location: "Дёмское шоссе, две полосы",
-    question: "Разрешено ли опережение справа по попутной полосе?",
-    image: "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=800",
-    correct: true,
-    explanation: "Опережение по попутной полосе разрешено."
-  },
-  {
-    location: "Нагаево, железнодорожный переезд",
-    question: "Можно ли обгонять ближе 100 метров до железнодорожного переезда?",
-    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800",
-    correct: false,
-    explanation: "Обгон запрещён ближе 100 м до ж/д переезда."
-  },
-  {
-    location: "Дёмский район, знак 5.15.1",
-    question: "Можно ли повернуть налево с крайней правой полосы?",
-    image: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800",
-    correct: false,
-    explanation: "Нужно занимать соответствующую полосу согласно знаку."
-  }
+const photos = [
+  "https://static.sobaka.ru/images/post/00/18/94/62/_rotator.jpg?v=1728116880",
+  "https://ufa1.ru/html-to-img/og/ZwvhXkauhFrw88uzg_nr8w/article-id6562717-16x9.jpg?1758361400",
+  "https://gtrkrb.ru/sites/default/files/styles/og-1200/public/photos/news/425822-prev-960843033.jpg?itok=QMWBFlHz",
+  "https://aif-s3.aif.ru/images/046/367/67900bb524826f3ea3a5e80ca60ff575.webp",
+  "https://storage.bash.news/sizes/video_thumb_1280x720/2026/06/16/17/40/1781631603-8bb3863abc26e87bd80260964cf065c72cad3dccd54d00f3288b4fc151a67552.jpg",
+  "https://snippets.1mi.media/43eb8400154e52f0551d2d55ec6b2b3c2ed1d360/c:1920:1080:nowe:0:-1/rs:fill:1920/616a6367f315026b380a902cdae87baa545c24fa21b75c8a9c16a6cea84a.webp",
+  "https://storage.bash.news/sizes/1200/2024/10/08/11/00/1728385218-070570ec54b7c23acddb90fc60727067a99264298012f3e545ad36f1b801ab17@2x.jpeg",
+  "https://prufy.ru/upload/iblock/178/fxlz91srkquihppt4p2k3ib53o3ujmit.jpg",
+  "https://prufy.ru/upload/delight.webpconverter/upload/iblock/6ba/x8uog9c07jfn6ypkwo30hw0hzxg1xxy9.jpg.webp",
+  "https://prufy.ru/upload/delight.webpconverter/upload/medialibrary/25d/e0mme8demvsagqj9ejdp6724b1hhfuzk.jpg.webp",
+  "https://ufa1.ru/html-to-img/og/hGFynmdBXGaVYNLfsYbWgw/article-id6562717-4x3.jpg?1758361400",
+  "https://files.1mi.media/661e377fec64efca842b934907399ca00fc6bb90/c:1920:1080:nowe:0:-1/rs:fill:800/616a6367f315026b380a902cdae87baa545c24fa21b75c8a9c16a6cea84a.webp",
+  "https://storage.bash.news/sizes/video_thumb_1280x720/2026/05/25/17/15/1779729344-ca8d5edd4690755ed3ffe0cc5572d063c27714cf52a168bcd80004f98b8170fc.jpg",
+  "https://ufa1.ru/html-to-img/og/kcdmZZFH7OmAJik5SK3QYw/article-id4043258-16x9.jpg?1715982471",
+  "https://zur-ufa.ru/i/news/2026/61181/61625e1f72254e709690c8d6166f1d02.webp",
+  "https://aif-s3.aif.ru/images/046/329/f82208b38504d9b882ffd6ee408c99fd.webp",
+  "https://vechufa.ru/uploads/posts/2025-12/doroga1.jpg",
+  "https://ufacitynews.ru/uploads/posts/2026-05/dorozhnye-raboty-strojka3_010823-1.webp",
+  "https://snippets.1mi.media/7bbe0b94c4ee17e809bd67ace94541e4e40e106a/c:1920:1080:nowe:0:-1/rs:fill:1920/010d5524e942bfbea96eadaa9489807c4de97e47286a7362c47eeabe4c53.webp",
+  "https://ufa1.ru/html-to-img/og/zgmTbuQrFS8elfiKGys2cQ/article-id7045066-16x9.jpg?1779639883",
+  "https://ufa1.ru/html-to-img/og/rHskqqRao4tYO-axt_PXew/article-id7110920-16x9.jpg?1781930656",
+  "https://ufa1.ru/html-to-img/og/4ftHxBSg1xyXNa_bj-sqxQ/article-id6573565-16x9.jpg?1769505460",
+  "https://ufa1.ru/html-to-img/og/5BIpRvCV-NxMOEe8uAOfGA/article-id76696874-16x9.jpg?1791875465",
+  "https://s0.rbk.ru/v6_top_pics/media/img/6/69/347851389122696.webp",
+  "https://aif-s3.aif.ru/images/037/157/55c5733503499865c0dea20f792191ef.webp",
+  "https://static.sobaka.ru/images/image/02/13/76/12/_normal.jpg?v=1783582776",
+  "https://ufa.bfm.ru/storage/article/October2025/n8pOIOrIxDzqV49osfj4n1CafrjrgnWhQDKodkIR.png",
+  "https://arhiv13.ufa-lib.ru/assets/files/31/panorama.jpg",
+  "https://nashural.ru/assets/uploads/TRKV7639-scaled.jpg",
+  "https://ufa1.ru/html-to-img/og/YXS1WkooyVQLyhQNlbjxrA/article-id6603350-16x9.jpg?1769505413"
 ];
+
+const locations = [
+  "Дёмское шоссе", "Дёмское шоссе, ямы", "Дёмское шоссе, зима", "Дёмское шоссе, ремонт",
+  "Дёмский район, новый микрорайон", "Дёмское шоссе, движение", "Дёмский район, перекрёсток",
+  "мост через Дёму", "ул. Центральная, Дёмский район", "микрорайон Яркий",
+  "ул. Правды, Дёмский район", "Дёмское шоссе, ремонт", "Дёмское шоссе, ямы",
+  "Дёмское шоссе", "Дёмский район", "Дёмское шоссе", "Дёмское шоссе, ремонт",
+  "Дёмский район, дорога", "ул. Мечтателей", "Дёмский район, панорама",
+  "Дёмский район", "Дёмское шоссе", "Дёмское шоссе", "Дёмское шоссе",
+  "Дёмское шоссе", "Дёмский район", "Дёмское шоссе", "Дёмский район",
+  "Дёмский район", "микрорайон Яркий"
+];
+
+const questions = [
+  "Можно ли выполнить обгон на этом участке?",
+  "Разрешено ли двигаться с обычной скоростью по такому покрытию?",
+  "Можно ли обгонять на скользкой дороге?",
+  "Разрешён ли обгон в зоне дорожных работ?",
+  "Можно ли двигаться прямо по этому знаку?",
+  "Можно ли обгонять в плотном потоке?",
+  "Обязан ли водитель уступить дорогу на перекрёстке?",
+  "Можно ли обгонять на мосту?",
+  "Обязан ли водитель уступить пешеходу?",
+  "Разрешена ли скорость более 20 км/ч в жилой зоне?",
+  "Можно ли остановиться на обочине ближе 5 метров от перекрёстка?",
+  "Разрешён ли обгон в зоне ремонта?",
+  "Можно ли обгонять при плохом покрытии?",
+  "Разрешён ли обгон в конце подъёма?",
+  "Можно ли пересекать сплошную линию?",
+  "Разрешено ли опережение справа?",
+  "Можно ли обгонять на крутом повороте?",
+  "Можно ли обгонять ближе 100 м до ж/д переезда?",
+  "Можно ли повернуть налево с крайней правой полосы?",
+  "Нужно ли полностью остановиться перед знаком Стоп?",
+  "Имеет ли преимущество водитель на главной дороге?",
+  "Разрешён ли разворот при отсутствии запрещающих знаков?",
+  "Можно ли обгонять на пешеходном переходе?",
+  "Можно ли повернуть, не уступив дорогу?",
+  "Преимущество у водителя справа?",
+  "Можно ли останавливаться на мосту?",
+  "Обязан ли водитель снизить скорость при плохом покрытии?",
+  "Можно ли обгонять при отсутствии сплошной?",
+  "Действует ли запрет обгона до конца населённого пункта?",
+  "Можно ли начать обгон перед пешеходным переходом?"
+];
+
+const corrects = [false, false, false, false, true, false, true, false, true, false, false, false, false, false, false, true, false, false, false, true, true, true, false, false, true, false, true, true, true, false];
+
+const explanations = [
+  "При ограниченной видимости обгон запрещён.",
+  "Скорость должна соответствовать состоянию дороги.",
+  "При плохом покрытии обгон опасен.",
+  "В зоне дорожных работ обгон запрещён.",
+  "Знак разрешает движение.",
+  "В плотном потоке обгон опасен.",
+  "На перекрёстке нужно уступать по правилам.",
+  "На мостах обгон запрещён.",
+  "На пешеходном переходе водитель обязан уступить.",
+  "В жилой зоне максимум 20 км/ч.",
+  "Остановка ближе 5 метров от перекрёстка запрещена.",
+  "В зоне ремонта обгон запрещён.",
+  "При плохом покрытии обгон запрещён.",
+  "В конце подъёма обгон запрещён.",
+  "Сплошную линию пересекать запрещено.",
+  "Опережение по попутной полосе разрешено.",
+  "На опасных поворотах обгон запрещён.",
+  "Обгон запрещён ближе 100 метров до переезда.",
+  "Нужно занимать полосу согласно знаку.",
+  "Знак Стоп требует полной остановки.",
+  "Знак «Главная дорога» даёт преимущество.",
+  "Если нет запрета — разворот разрешён.",
+  "Обгон на пешеходных переходах запрещён.",
+  "Нужно уступать дорогу.",
+  "На равнозначных перекрёстках — помеха справа.",
+  "Остановка на мостах запрещена.",
+  "Скорость должна соответствовать условиям.",
+  "Если нет запрета и безопасно — можно.",
+  "Знак 3.20 действует до конца населённого пункта.",
+  "Обгон непосредственно перед пешеходным переходом запрещён."
+];
+
+module.exports = questions.map((q, i) => ({
+  location: locations[i],
+  question: q,
+  image: photos[i],
+  correct: corrects[i],
+  explanation: explanations[i]
+}));
