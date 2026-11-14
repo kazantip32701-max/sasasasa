@@ -1,6 +1,7 @@
 require('dotenv').config();
 const TelegramBot = require('node-telegram-bot-api');
 const questionsData = require('./questions');
+const http = require('http');
 
 const token = process.env.BOT_TOKEN;
 if (!token) {
@@ -10,7 +11,22 @@ if (!token) {
 
 const bot = new TelegramBot(token, { polling: true });
 
-const userSessions = {}; // userId -> { questions, current, correct, wrong, answers }
+// Фиктивный сервер для Render
+const PORT = process.env.PORT || 3000;
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('PDD Bot is running\n');
+});
+
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`Dummy HTTP server listening on 0.0.0.0:${PORT}`);
+});
+
+server.on('error', (err) => {
+  console.error('HTTP server error:', err);
+});
+
+const userSessions = {};
 
 function shuffle(array) {
   const arr = [...array];
@@ -57,7 +73,7 @@ async function sendQuestion(chatId, userId) {
       reply_markup: keyboard
     });
   } catch (e) {
-    // Если фото не загрузилось — отправляем без фото
+    console.error('Photo error:', e.message);
     await bot.sendMessage(chatId, text + '\n\n(фото временно недоступно)', {
       reply_markup: keyboard
     });
@@ -124,9 +140,12 @@ bot.on('callback_query', async (query) => {
 
 bot.on('message', (msg) => {
   if (msg.text && !msg.text.startsWith('/')) {
-    // Можно ловить кошелёк здесь
     bot.sendMessage(msg.chat.id, 'Спасибо! Кошелёк получен. Награда будет отправлена после проверки.');
   }
+});
+
+bot.on('polling_error', (error) => {
+  console.error('Polling error:', error.code, error.message);
 });
 
 console.log('PDD Bot запущен...');
